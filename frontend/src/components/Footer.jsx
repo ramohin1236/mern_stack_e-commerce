@@ -1,6 +1,4 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-
 import instaImg1 from '../assets/instagram-1.jpg'
 import instaImg2 from '../assets/instagram-2.jpg'
 import instaImg3 from '../assets/instagram-3.jpg'
@@ -11,28 +9,28 @@ import instaImg6 from '../assets/instagram-6.jpg'
 const Footer = () => {
     return (
         <>
-            <footer class="section__container footer__container">
-                <div class="footer__col">
+            <footer className="section__container footer__container">
+                <div className="footer__col">
                     <h4>CONTACT INFO</h4>
                     <p>
                         <span>
-                            <i class="ri-map-pin-2-fill"></i>
+                            <i className="ri-map-pin-2-fill"></i>
                         </span>
                             123, London Bridge
                         Street, London
                     </p>
                     <p>
                         <span>
-                            <i class="ri-mail-fill"></i>
+                            <i className="ri-mail-fill"></i>
                         </span>
                         support@Lebaba.com
                     </p>
                     <p>
-                        <span><i class="ri-phone-fill"></i></span>
+                        <span><i className="ri-phone-fill"></i></span>
                         (+012) 3456 789
                     </p>
                 </div>
-                <div class="footer__col">
+                <div className="footer__col">
                     <h4>COMPANY</h4>
                     <Link to="#">Home</Link>
                     <Link to="#">About Us</Link>
@@ -40,7 +38,7 @@ const Footer = () => {
                     <Link to="#">Our Blog</Link>
                     <Link to="#">Terms &amp; Conditions</Link>
                 </div>
-                <div class="footer__col">
+                <div className="footer__col">
                     <h4>USEFUL LINK</h4>
                     <Link to="#">Help</Link>
                     <Link to="#">Track My Order</Link>
@@ -48,9 +46,9 @@ const Footer = () => {
                     <Link to="#">Women</Link>
                     <Link to="#">Dresses</Link>
                 </div>
-                <div class="footer__col">
+                <div className="footer__col">
                     <h4>INSTAGRAM</h4>
-                    <div class="instagram__grid">
+                    <div className="instagram__grid">
                         <img src={instaImg1} alt="instagram" />
                         <img
                             src={instaImg2}
@@ -66,7 +64,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <div class="footer__bar">
+            <div className="footer__bar">
                 Copyright © 2025 Web Design Mastery. All rights reserved.
             </div>
             

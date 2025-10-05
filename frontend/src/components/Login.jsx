@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -18,7 +19,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const response = await loginUser(data).unwrap();
-      toast("🦄 Login Successfull!", {
+      toast("Login Successfull!", {
         position: "top-right",
         autoClose: 1000,
         hideProgressBar: false,
@@ -29,9 +30,8 @@ const Login = () => {
         theme: "dark",
       });
       navigate('/')
-      console.log(response);
     } catch (error) {
-      console.error("Login failed!", error);
+      setMessage("Email & password didn't match!")
     }
   };
   return (
@@ -59,7 +59,9 @@ const Login = () => {
           {errors.password && (
             <p className="text-red-500">Password is required</p>
           )}
-
+               {
+                message && <p className="text-sm text-red-500">{message}</p>
+               }
           <button className="w-full mt-5 bg-primary hover:bg-primary/90 text-white font-medium py-3 rounded-md">
             Login
           </button>
