@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/no-unescaped-entities */
+
 
 import bannerImg from "../../assets/header.png"
 
